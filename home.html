@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Site</title>
+  <script src="main.js"></script>
+  <link rel="stylesheet" href="main.css">
+</head>
+<style>
+
+</style>
+</head>
+<header class="header">
+  <a href="#" class="logo">Developer</a>
+  <nav class="nav-items">
+    <a href="/index.html">Home</a>
+    <a href="/about.html">About</a>
+    <a href="#">Contact</a>
+  </nav>
+
+</header>
+<main>
+  <div class="intro">
+    <h1>A Web Developer</h1>
+    <p>I am a web developer and I love to create websites.</p>
+    <button>Learn More</button>
+  </div>
+  <div class="achievements">
+    <div class="work">
+      <i class="fas fa-atom"></i>
+      <p class="work-heading">Projects</p>
+      <p class="work-text">I have worked on many projects and I am very proud of them. I am a very good developer and I
+        am always looking for new projects.</p>
+    </div>
+    <div class="work">
+      <i class="fas fa-skiing"></i>
+      <p class="work-heading">Skills</p>
+      <p class="work-text">I have a lot of skills and I am very good at them. I am very good at programming and I am
+        always looking for new skills.</p>
+    </div>
+    <div class="work">
+      <i class="fas fa-ethernet"></i>
+      <p class="work-heading">Network</p>
+      <p class="work-text">I have a lot of network skills and I am very good at them. I am very good at networking and I
+        am always looking for new network skills.</p>
+    </div>
+  </div>
+  <div class="about-me">
+    <div class="about-me-text">
+      <h2>About Me</h2>
+      <p>I am a web developer and I love to create websites. I am a very good developer and I am always looking for new
+        projects. I am a very good developer and I am always looking for new projects.</p>
+    </div>
+    <img
+      src="https://images.unsplash.com/photo-1596495578065-6e0763fa1178?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80"
+      alt="me">
+  </div>
+</main>
+
+
+
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img
+      src="https://img.freepik.com/free-photo/grey-metallic-jeep-with-blue-stripe-it_114579-4080.jpg?size=626&ext=jpg&ga=GA1.1.1226872327.1679832123&semt=sph"
+      style="width:80%">
+    <div class="text">Caption Text</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img
+      src="https://img.freepik.com/free-vector/car-led-lights-realistic-composition-with-view-night-road-silhouettes-automobile-traffic-lights-illustration_1284-28531.jpg?size=626&ext=jpg&ga=GA1.1.1226872327.1679832123&semt=sph"
+      style="width:80%">
+    <div class="text">Caption Two</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img
+      src="https://img.freepik.com/premium-photo/generic-brandless-modern-sport-car-with-fire-smoke_110488-1759.jpg?size=626&ext=jpg&ga=GA1.1.1226872327.1679832123&semt=sph"
+      style="width:80%" >
+    <div class="text">Caption Three</div>
+  </div>
+  <div class="work">
+    <i class="fas fa-ethernet"></i>
+    <p class="work-heading">Network</p>
+    <p class="work-text">I have a lot of network skills and I am very good at them. I am very good at networking and I
+      am always looking for new network skills.</p>
+  </div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+<script>
+  let slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) { slideIndex = 1 }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+  }
+  function cart() {
+    alert("item added to cart");
+
+
+  }
+  function cart() {
+    alert("item added to cart");
+
+  }
+
+  // Get the current page's filename
+  var currentPage = location.pathname.split('/').pop();
+
+  // Get the link for the current page
+  var currentLink = document.getElementById(currentPage.split('.')[0] + '-link');
+
+  // Highlight the current link
+  currentLink.classList.add('active');
+
+
+</script>
+<!-- <div class="card">
+  <div>
+  <h1>jeans</h1>
+  <img src="one.jpeg" height="50%" width="90%">
+  <p>this is from germany</p>
+  <button onclick="cart();">add to cart</button>
+</div>
+
+  <div>
+  <h1> shirts</h1>
+  <img src="one.jpeg" height="50%" width="90%">
+  <p>this is from germany</p>
+  <button onclick="cart();">add to cart</button>
+  </div>
+   
+  <div>
+  <h1>  jackets</h1>
+  <img src="one.jpeg" height="50%" width="90%">
+  <p>this is from germany</p>
+  <button onclick="cart();">add to cart</button>
+</div>
+
+
+  <div>
+  <h1> shoes</h1>
+  <img src="one.jpeg" height="50%" width="90%">
+  <p>this is from germany</p>
+  <button onclick="cart();">add to cart</button>
+</div>
+</div> -->
+<!-- <div class="container">
+  <h1>Languages that we offer</h1>
+  <div class="">
+    <h1>HTML</h1>
+  </div>
+  <P>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus cupiditate minima accusantium nostrum labore
+    dolorum expedita cum maxime corrupti exercitationem, explicabo quis. Maxime impedit iste iure ea ab, alias
+    perferendis.
+  </P>
+  <h1>javaScript</h1>
+  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non veritatis corrupti deleniti laudantium tempore
+    dignissimos voluptatem praesentium inventore, neque et maiores facere autem molestiae nisi iure vitae dolore error
+    ratione.</p>
+
+
+
+  <h1>HTML</h1>
+  <P>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus cupiditate minima accusantium nostrum labore
+    dolorum expedita cum maxime corrupti exercitationem, explicabo quis. Maxime impedit iste iure ea ab, alias
+    perferendis.
+  </P>
+  <h1>javaScript</h1>
+  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non veritatis corrupti deleniti laudantium tempore
+    dignissimos voluptatem praesentium inventore, neque et maiores facere autem molestiae nisi iure vitae dolore error
+    ratione.</p>
+
+
+  <h1>HTML</h1>
+  <P>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus cupiditate minima accusantium nostrum labore
+    dolorum expedita cum maxime corrupti exercitationem, explicabo quis. Maxime impedit iste iure ea ab, alias
+    perferendis.
+  </P>
+  <h1>javaScript</h1>
+  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non veritatis corrupti deleniti laudantium tempore
+    dignissimos voluptatem praesentium inventore, neque et maiores facere autem molestiae nisi iure vitae dolore error
+    ratione.</p>
+</div>
+</div> -->
+
+<!--    <table border="7" >
+        <tr>
+            <td>
+                <img src="./one.jpeg" class="img" alt="">
+            </td>
+            <td>
+                <img src="./rwo.png" class="img-bg" alt="">
+            </td>
+        </tr>
+      
+        <tr >
+         
+            <td>
+                <div class="main-ref">
+                    <a onclick="document.getElementById('content').src='home.html'" class="a-ref">Home</a>
+                    <a onclick="document.getElementById('content').src='about.html'" class="a-ref">About</a>
+                    <a onclick="document.getElementById('content').src='services.html'" class="a-ref">Services</a>
+                </div>
+            <td>
+              <iframe  id="content" src="home.html" >
+               
+              </iframe>
+            </td>
+        </tr>
+        <tr >
+            <td colspan="2">
+                <p></p>
+                <p style="text-align: center;">Copyright @cossi wing001</p>
+                p
+            </td>
+        </tr>
+        
+           
+       
+    </table>  -->
+</body>
+
+</html>
