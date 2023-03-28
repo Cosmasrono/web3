@@ -52,7 +52,7 @@ body{
 body {font-family: Verdana, sans-serif;}
 .mySlides {display: none;
 margin-left: 1cm;
-
+background-color: aquamarine;
 }
 img {vertical-align: middle;}
 
