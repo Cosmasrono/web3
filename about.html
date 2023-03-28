@@ -8,30 +8,55 @@
 
     <title>Document</title>
 </head>
+
+<style>
+    body{
+        background-color: pink;
+    }
+</style>
+
+<a href="home.html">Home</a>
 <body>
-    <h1>hello world</h1>
+    <h1>This is my about page</h1>
+
+ <!--    <button onclick="cart();" id="add-to-cart-button">add to cart</button>
+ -->
+    <div id="cart-count">0</div>
+
     <div class="card">
-        <div>
+      <div>
         <h1>jeans</h1>
         <img src="https://ke.jumia.is/cms/TNG/L3/Fashion/MensFashion/Clothing/KE_MensClothing_132x132-copy-5.jpg" height="50%" width="90%">
         <p>From germany</p>
-        <button onclick="cart();">add to cart</button>
+        <button onclick="cart();" id="add-to-cart-button">add to cart</button>
       </div>
-      
-        <div>
-        <h1> shirts</h1>
+    
+      <div>
+        <h1>shirts</h1>
         <img src="https://ke.jumia.is/cms/TNG/L3/Fashion/MensFashion/Clothing/KE_MensClothing_132x132-copy-5.jpg" height="50%" width="90%">
         <p>From germany</p>
-        <button onclick="cart();">add to cart</button>
-        </div>
-         
-        <div>
-        <h1>  jackets</h1>
+        <button onclick="cart();" id="add-to-cart-button">add to cart</button>
+      </div>
+    
+      <div>
+        <h1>jackets</h1>
         <img src="https://ke.jumia.is/cms/TNG/L3/Fashion/MensFashion/Clothing/KE_MensClothing_132x132-copy-5.jpg" height="50%" width="90%">
         <p>From germany</p>
-        <button onclick="cart();">add to cart</button>
+        <button onclick="cart();" id="add-to-cart-button">add to cart</button>
       </div>
-      
+    </div>
+    
+    <script>
+      var cartCount = 0;
+      var addToCartButton = document.getElementById("add-to-cart-button");
+      var cartCountElement = document.getElementById("cart-count");
+    
+      addToCartButton.addEventListener("click", function() {
+        cartCount++;
+        cartCountElement.innerText = cartCount;
+      });
+    </script>
+    
       
     
       </div> 
