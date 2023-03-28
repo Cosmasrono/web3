@@ -7,7 +7,16 @@
 body{
     margin: 60px;
     text-align: center;
-}
+    
+    
+
+
+  }
+  
+
+
+
+
 .a-ref{
    /*  text-decoration: none; */
      
@@ -31,7 +40,7 @@ body{
 }
 * {
     box-sizing: border-box;
-     color: #030202; 
+    color:black;
     text-align: center;
     justify-content: center;
     margin-top: 10px;
